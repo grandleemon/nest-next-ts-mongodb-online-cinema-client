@@ -7,6 +7,7 @@ import Link from 'next/link'
 import MaterialIcon from '@/ui/MaterialIcon'
 
 const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
+	console.log(item)
 	const { asPath } = useRouter()
 	return (
 		<li

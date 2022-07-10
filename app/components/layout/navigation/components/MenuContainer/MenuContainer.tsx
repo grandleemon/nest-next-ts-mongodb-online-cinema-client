@@ -4,12 +4,13 @@ import {
 	firstMenu,
 	userMenu,
 } from '@/components/layout/navigation/components/MenuContainer/menu.data'
+import GenreMenu from '@/components/layout/navigation/components/MenuContainer/genres/GenreMenu'
 
 const MenuContainer: FC = () => {
 	return (
 		<div>
 			<Menu menu={firstMenu} />
-			{/*genres*/}
+			<GenreMenu />
 			<Menu menu={userMenu} />
 		</div>
 	)
