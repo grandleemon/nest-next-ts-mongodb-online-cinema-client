@@ -1,9 +1,10 @@
 .menu {
-  @apply mb-14 animate-fade
-}
 
-.menu .heading {
-  @apply text-grey-500 uppercase text-sm font-semibold pl-layout
+  .heading {
+    @apply text-grey-500 uppercase text-sm font-semibold pl-layout
+  }
+
+  @apply mb-14 animate-fade
 }
 
 .menu .ul > li {
