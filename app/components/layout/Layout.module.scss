@@ -14,11 +14,11 @@ $bar-width: 20%;
   @apply w-0
 }
 
-.layout div:first-child {
+.layout > div:first-child {
   @apply left-0 border-r border-r-grey-800
 }
 
-.layout div:last-child {
+.layout > div:last-child {
   @apply right-0 border-l border-l-grey-800
 }
 
