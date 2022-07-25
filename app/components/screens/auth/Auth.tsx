@@ -9,6 +9,7 @@ import Heading from '@/ui/heading/Heading'
 import Button from '@/ui/form-elements/Button'
 import AuthFields from '@/screens/auth/AuthFields'
 import styles from './Auth.module.scss'
+import { useActions } from '@/hooks/useActions'
 
 const Auth: FC = () => {
 	useAuthRedirect()
@@ -26,9 +27,7 @@ const Auth: FC = () => {
 		mode: 'onChange',
 	})
 
-	const login = (data: any) => alert('logindata')
-
-	const register = (data: any) => alert('regdata')
+	const { login, register } = useActions()
 
 	const onSubmit: SubmitHandler<IAuthInput> = (data) => {
 		if (type === 'login') login(data)
